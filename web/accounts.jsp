@@ -12,7 +12,7 @@
         <title>TitanBank Accounts Page</title>
     </head>
     <body>
-        
+         <jsp:include page="header.jsp"/>
             <form action="AccountInfoServlet" method="post">
                 <select name="AccountType">
                 <option value="checking">Checking</option>

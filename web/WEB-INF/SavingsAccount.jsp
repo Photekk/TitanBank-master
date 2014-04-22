@@ -12,6 +12,23 @@
         <title>Savings Account Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <table border="1">
+             <c:forEach var="bankAccount" items="${bankList}">
+             <thead>
+                 <tr>
+                     <th>Customer</th>
+                     
+                     <th>Balance</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>${ bankAccount.getCustomer() }</td>
+                     <td>${ bankAccount.getBalance() }</td>
+                     
+                 </tr>
+                 
+             </tbody>
+         </table>
     </body>
 </html>
